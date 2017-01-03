@@ -1,2 +1,3 @@
 # Studiodin
-Studiodin website
+
+StudioDin website

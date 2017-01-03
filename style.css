@@ -1,0 +1,301 @@
+/*
+Theme Name: Pure - Multipurpose Responsive WordPress Theme
+Theme URI: http://gt3themes.com/wordpress-themes/pure/
+Author: mad_dog
+Author URI: gt3themes.com
+Description: Bringing the great sense of elegant and neat style, our new Pure WordPress Theme is professionally designed to help you run any kind of portfolio website or personal blog. Fully functional, responsive and retina ready, this theme comes with all features on board to fulfill all your customization needs.
+Version: 1.0 (build 0f65817)
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.small-container {
+	width: 100% !important;
+	left: 50% !important;
+	padding-left: 3%;
+}
+
+.vision-container {
+	width: 100% !important;
+	left: 50% !important;
+	padding-left: 3%;
+	background: url('http://localhost:8888/studiodin/wp-content/uploads/2014/08/about.jpg');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  	background-size: cover;
+    background-position: center;
+}
+
+.contentarea {
+	/*margin-top: 15px;*/
+	padding: 20px;
+	min-height: 580px !important;
+}
+
+.contact_list {
+	font-size: 13px;
+	font-family: 'Source Sans Pro', sans-serif;
+	float: left;
+	margin-bottom: 15px;
+	visibility: hidden;
+	text-align: center !important;
+}
+
+.contact_list li:first-child{
+	padding-left: 0px;
+}
+
+.contact_list li:last-child{
+	border-right: none;
+	padding-right: 10px;
+}
+
+.contact_list li {
+	border-right: 1px solid #666;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 20px;
+}
+
+.homepage_grid .portfolio_item {
+	margin: 0;
+}
+
+.quote_overlay {
+	background: rgba(203, 206, 208, 0.9);
+	width: 100%;
+	height: 100%;
+	min-height: 580px;
+	z-index: 200;
+	position: relative;
+	pointer-events: none;
+}
+
+.quote_overlay img:hover {
+	opacity:0;
+	transition: opacity .2s ease-out;
+	-moz-transition: opacity .2s ease-out;
+	-webkit-transition: opacity .2s ease-out;
+	-o-transition: opacity .2s ease-out;
+}
+
+.optionset {
+	background-color: #c2c6c8;
+	font-size: 13px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.optionset_titel {
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url('img/filter_arrow.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+	padding-left: 40px;
+}
+
+/* ===[ Footer Widget Areas ]=== */
+.site-info { 
+	clear: both; 
+}
+
+#footer-widgets {
+    width: 100%;
+    border-top: none;
+}
+
+#footer-widgets .widget li { 
+	list-style-type: none; 
+}
+
+.template-front-page #footer-widgets { 
+	padding-top: 0; 
+}
+
+.tooltip {
+	z-index: 9999;
+	position: absolute;
+	bottom: 0;
+	width: 91.7%;
+	height: 0%;
+	background-color: #c2c6c9;
+	margin-bottom: 5px;
+	visibility: hidden;
+	-webkit-transition: height 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.3s;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.port_icons {
+	z-index: 9999;
+	position: absolute;
+	align-content: center;
+	bottom: 0;
+	right: 15px;
+	visibility: hidden;
+}
+
+.port_icons li {
+	margin-left: 10px !important;
+	float: left;
+}
+
+.port_icons #port_zoom a{
+	background-image: url('img/port_items_zoom.png');
+	width: 50px;
+	height: 49px;
+	display: block;
+}
+
+.port_icons #port_link a{
+	background-image: url('img/port_items_plus.png');
+	width: 50px;
+	height: 49px;
+	display: block;
+}
+
+.span8 img{
+}
+
+.meta_body {
+	position: absolute;
+	width: 100%;
+	background-color: #c2c6c9;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.3s;
+	pointer-events: none;
+	text-align: left !important;
+	padding-left: 15px;
+}
+
+.ip {
+}
+
+.item {
+	position: relative;
+	overflow: hidden;
+}
+
+.img_block img {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.img_block img:hover {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+
+#map-canvas { 
+	height: 100%; 
+  width: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+.module_text_area {
+	/*position: absolute;*/
+	z-index: 2;
+}
+
+.wpcf7 {
+	margin-top: -11px !important;
+}
+
+ajax-loader {
+	width: 16px;
+	height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    
+	#footer-widgets.three .widget {
+        float: left;
+        margin-right: 5%;
+        width: 100%;
+        clear: none;
+    }
+      
+}
+
+.optionset li:last-child {
+	border: none;
+}
+
+.backlink {
+	  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url('img/filter_arrow_back.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-left:40px;
+  padding-left: 15px;
+  line-height: 20px;
+}
+
+
+
+.optionset_mobile li.selected {
+	visibility: visible;
+	font-style: normal;
+	border: none;
+	padding: 0 0 0 10px;
+	width: 60%;
+	display: inline-block !important;
+	background-color: #DEDEDE;
+	margin-left: 0px;
+}
+
+.optionset_mobile:hover {
+	cursor: pointer;
+}
+
+.optionset_mobile li {
+	display: none !important;
+}
+
+.ucode {
+	margin-top: 5%;
+	float: left;
+	width: 40%;
+}
+
+.post-password-form{
+	margin-top: 5%;
+	top: 10%;
+	padding: 15px;
+	background-color: #d9d9d9;
+	float: right;
+	width: 40%;
+}
+
+.banner {
+    margin-left: 13px;
+}
+
+.module_google_map {
+	width: 100% !important;
+}
+
+.module_text_area {
+	width: 400px !important;
+	background: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px #888888;
+}
